@@ -20,9 +20,10 @@ Deploy Red Hat Advanced Cluster Security for Kubernetes Demo ( Apps and Pipeline
 ### Helm
 [Helm Quick Start](https://helm.sh/docs/intro/quickstart/)
 
-### Ansible 
+### Ansible 2.9
 - [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) 
 - PyYAML
+- python3-openshift
 
 
 ### Define variables for your cluster
@@ -47,6 +48,7 @@ crc config set memory 16384
 #### Installing RHACS and Demo workloads 
 ---
 ```
+pip
 ansible-galaxy collection install kubernetes.core
 git clone https://github.com/ralvares/rhacs-crc
 cd rhacs-crc
