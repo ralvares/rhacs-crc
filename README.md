@@ -24,6 +24,7 @@ Deploy Red Hat Advanced Cluster Security for Kubernetes Demo ( Apps and Pipeline
 - [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) 
 - PyYAML
 - python3-openshift
+- python3-jmespath
 
 
 ### Define variables for your cluster
