@@ -47,6 +47,7 @@ crc config set memory 16384
 #### Installing RHACS and Demo workloads 
 ---
 ```
+ansible-galaxy collection install kubernetes.core
 git clone https://github.com/ralvares/rhacs-crc
 cd rhacs-crc
 ```
