@@ -1,0 +1,10 @@
+---
+become_override: false
+ocp_username: kubeadmin
+silent: false
+ACTION: create
+
+ocp4_workload_stackrox_central_admin_password: stackrox
+
+#orcherstrator openshift or crc 
+ocp4_workload_stackrox_central_orchestrator: crc

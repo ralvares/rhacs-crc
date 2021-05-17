@@ -1,0 +1,9 @@
+---
+become_override: false
+ocp_username: kubeadmin
+silent: false
+ACTION: create
+
+# needs to match what is defined in the stackrox_central role (or overridden
+# globally)
+ocp4_workload_stackrox_central_admin_password: stackrox

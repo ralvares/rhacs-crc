@@ -1,0 +1,32 @@
+# Configuration secrets for the Central deployment
+central:
+{% if ocp4_workload_stackrox_central_orchestrator == 'crc' %}
+  resources:
+    requests:
+      cpu: 0
+      memory: 0
+{% endif %}
+  adminPassword:
+    value: {{ ocp4_workload_stackrox_central_admin_password }}
+  exposure:
+    route:
+      enabled: true
+
+#Scanner
+{% if ocp4_workload_stackrox_central_orchestrator == 'crc' %}
+scanner:
+  replicas: 1
+  autoscaling:
+    disable: true
+  resources:
+    requests:
+      memory: 0 
+      cpu: 0
+  dbResources:
+    requests:
+      memory: 0
+      cpu: 0
+{% endif %}
+
+imagePullSecrets:
+  allowNone: true

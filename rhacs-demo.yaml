@@ -1,0 +1,6 @@
+- hosts: localhost
+  vars:
+    ocp_username: kubeadmin
+    ocp4_workload_stackrox_central_admin_password: QHb7jH9SusmBmmQX 
+  roles:
+  - ocp4_workload_stackrox_demo_apps

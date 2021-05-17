@@ -1,0 +1,11 @@
+- hosts: localhost
+  vars:
+    ocp_username: kubeadmin
+    ocp4_workload_stackrox_central_admin_password: QHb7jH9SusmBmmQX 
+    ocp4_workload_stackrox_central_orchestrator: crc
+    #ocp4_workload_stackrox_central_orchestrator: openshift
+  roles:
+  - ocp4_workload_stackrox_central
+  - ocp4_workload_stackrox_sensor
+  - ocp4_workload_stackrox_demo_apps
+  - ocp4_workload_stackrox_demo_pipeline
