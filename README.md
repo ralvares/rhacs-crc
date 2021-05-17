@@ -45,12 +45,13 @@ crc config set memory 16384
 ```
 
 #### Installing RHACS and Demo workloads 
-
+---
+```
 git clone https://github.com/ralvares/rhacs-crc
 cd rhacs-crc
-ls
+```
 
-You can use the rhacs-install.yaml as example, please change the credentials before running the playbook.
+You can use the **rhacs-install.yaml** as example, please change the credentials before running the playbook.
 
 rhacs-install.yaml file Example
 ---
