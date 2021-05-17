@@ -2,8 +2,7 @@
   vars:
     ocp_username: kubeadmin
     ocp4_workload_stackrox_central_admin_password: QHb7jH9SusmBmmQX 
-    ocp4_workload_stackrox_central_orchestrator: crc
-    #ocp4_workload_stackrox_central_orchestrator: openshift
+    ocp4_workload_stackrox_central_orchestrator: crc 
   roles:
   - ocp4_workload_stackrox_central
   - ocp4_workload_stackrox_sensor
